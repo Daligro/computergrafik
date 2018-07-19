@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/ball.unity
+- path: C:/Users/FIni/Documents/Computergrafik/computergrafik/Menu.unity
   isLoaded: 1
   isActive: 1
