@@ -10,9 +10,11 @@ public class playerController : MonoBehaviour {
     public float jumpHeight;
     [Range(0.1f,10.0f)]
     public float friction;
-
+    [Range(0.01f, 1f)]
+    public float volumeSpeedScale;
     public GameObject mainCamera;
     public AudioClip jumpSound;
+    public AudioClip bounceSound;
     public AudioSource MusicSource;
 
     private bool canJump = true;
@@ -21,7 +23,6 @@ public class playerController : MonoBehaviour {
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        MusicSource.clip = jumpSound;
         rb.angularDrag = friction;
     }
     void FixedUpdate()
@@ -48,6 +49,8 @@ public class playerController : MonoBehaviour {
         if (Input.GetButton("Jump") && canJump)
         {
             jump = 1 * jumpHeight;
+            MusicSource.clip = jumpSound;
+            MusicSource.volume = 0.8f;
             MusicSource.Play();
         }
         Vector3 movement = (fromCameraToMe * moveVertical + mainCamera.transform.right * moveHorizontal)*speed;
@@ -60,14 +63,16 @@ public class playerController : MonoBehaviour {
 
     void OnCollisionEnter(Collision other)
     {
-        print("jump");
+        float speed = rb.velocity.magnitude;
+        MusicSource.clip = bounceSound;
+        MusicSource.volume = volumeSpeedScale * speed;
+        MusicSource.Play();
         if (other.gameObject.tag.Equals("Floor")) 
             canJump = true;
     }
 
     void OnCollisionExit(Collision other)
     {
-        print("land");
         if (other.gameObject.tag.Equals("Floor"))
             canJump = false;
     }
