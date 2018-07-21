@@ -111,12 +111,10 @@ public class playerController : MonoBehaviour {
         MusicSource.clip = bounceSound;
         MusicSource.volume = volumeSpeedScale * speed;
         MusicSource.Play();
-        if (other.gameObject.tag.Equals("Floor")) {
             if (Input.GetButton("Jump"))
                 jump();
             else
                 canJump = true;
-        }
     }
 
     void OnCollisionExit(Collision other)

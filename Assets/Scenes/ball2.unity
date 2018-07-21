@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8671753, g: 0.672445, b: 0.5176637, a: 1}
+  m_IndirectSpecularColor: {r: 0.8671712, g: 0.6724327, b: 0.51767623, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10571,15 +10571,15 @@ MonoBehaviour:
   speed: 10
   jumpHeight: 550
   friction: 2
-  volumeSpeedScale: 0
+  volumeSpeedScale: 0.069
   gravity: 0
   gravityDirection: {x: 0, y: 0, z: 0}
   powerUpTime: 0
   mainCamera: {fileID: 282840810}
   jumpSound: {fileID: 8300000, guid: 71819c0b57dbfbf4fa2fd58e9810b7a4, type: 3}
-  bounceSound: {fileID: 0}
+  bounceSound: {fileID: 8300000, guid: c56304c5629c6ce43b65203ceef02195, type: 3}
   MusicSource: {fileID: 219459817}
-  normalMaterial: {fileID: 0}
+  normalMaterial: {fileID: 2100000, guid: e96d08e4d5f74b94898dc0a3a58297e8, type: 2}
   materialChanged: 0
   directionChanged: 0
   gravityChanged: 0
