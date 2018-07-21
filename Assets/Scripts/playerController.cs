@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour {
 
-    [Range(0.01f,10.0f)]
+    [Range(0.01f,30.0f)]
     public float speed;
     [Range(0.1f,1000.0f)]
     public float jumpHeight;
@@ -12,26 +12,59 @@ public class playerController : MonoBehaviour {
     public float friction;
     [Range(0.01f, 1f)]
     public float volumeSpeedScale;
+    [Range(0.1f, 20f)]
+    public float gravity;
+    public Vector3 gravityDirection;
+
+    public int powerUpTime;
     public GameObject mainCamera;
     public AudioClip jumpSound;
     public AudioClip bounceSound;
     public AudioSource MusicSource;
+    public Material normalMaterial;
+    public bool materialChanged = false;
+    public bool directionChanged = false;
+
+    private float speedIfChanged;
+    private float jumpHeightIfChanged;
+    private float frictionIfChanged;
 
     private bool canJump = true;
     private Rigidbody rb;
+
+    private float timePassed=0;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.angularDrag = friction;
+        speedIfChanged = speed;
+        jumpHeightIfChanged = jumpHeight;
+        frictionIfChanged = friction;
     }
     void FixedUpdate()
     {
+        //wenn das material der Kugel verändert wurde:
+        if(materialChanged)
+        {
+            //Zeit messen
+            timePassed += Time.deltaTime;
+            if(timePassed>=powerUpTime)
+            {
+                //material + timer zurücksetzen
+                deactivatePowerUp();
+            }
+        }
+
+        //TODO: Gravitation drehen implementieren
+        //gravitation
+        //rb.velocity.y += gravity * Time.deltaTime;
+        //gravityDirection= new Vector3(9.81f, 0f, 0f);
+        //Physics.gravity = gravityDirection;
+
         Vector3 fromCameraToMe = transform.position - mainCamera.transform.position;
         fromCameraToMe.y = 0;
         fromCameraToMe.Normalize();
-        //Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        //float force = speed * movementVector.magnitude;
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
@@ -55,8 +88,6 @@ public class playerController : MonoBehaviour {
         }
         Vector3 movement = (fromCameraToMe * moveVertical + mainCamera.transform.right * moveHorizontal)*speed;
         movement.y += jump;
-        //Vector3 direction = movementVector.y *  + jump + movementVector.x * maincam.;
-        //Vector3 movement = new Vector3(moveHorizontal * speed, jump, moveVertical * speed);
 
         rb.AddForce(movement);
     }
@@ -77,5 +108,14 @@ public class playerController : MonoBehaviour {
             canJump = false;
     }
 
+    private void deactivatePowerUp()
+    {
+        this.gameObject.GetComponent<Renderer>().material = normalMaterial;
+        timePassed = 0f;
+        materialChanged = false;
+        speed = speedIfChanged;
+        jumpHeight = jumpHeightIfChanged;
+        friction = frictionIfChanged;
 
+    }
 }

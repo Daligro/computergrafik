@@ -20,10 +20,11 @@ public class cameraController : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 
+
         if(rotateAroundPlayer)
         {
-            Quaternion camTurnAngle1 = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * RotationSpeed, Vector3.up);
-            Quaternion camTurnAngle2 = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * RotationSpeed, Vector3.left);
+            Quaternion camTurnAngle1 = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * RotationSpeed, -player.GetComponent<playerController>().gravityDirection);
+            Quaternion camTurnAngle2 = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * RotationSpeed, -player.transform.right);
             offset = camTurnAngle1 * camTurnAngle2 * offset;
         }
 
