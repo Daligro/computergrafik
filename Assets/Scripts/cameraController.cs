@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class cameraController : MonoBehaviour {
+public class CameraController : MonoBehaviour {
 
     /**
     public GameObject player;
@@ -90,7 +90,7 @@ public class cameraController : MonoBehaviour {
 
             Quaternion rotation;
 
-            if (!player.GetComponent<playerController>().gravityChanged)
+            if (!player.GetComponent<PlayerController>().gravityChanged)
                 rotation = Quaternion.Euler(y, x, 0);
             else
                 rotation = Quaternion.Euler(-x, y, 90f);
