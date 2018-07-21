@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour {
 
-    [Range(0.01f,30.0f)]
+    [Range(0.01f, 30.0f)]
     public float speed;
-    [Range(0.1f,1000.0f)]
+    [Range(0.1f, 1000.0f)]
     public float jumpHeight;
-    [Range(0.1f,10.0f)]
+    [Range(0.1f, 10.0f)]
     public float friction;
     [Range(0.01f, 1f)]
     public float volumeSpeedScale;
@@ -24,6 +24,7 @@ public class playerController : MonoBehaviour {
     public Material normalMaterial;
     public bool materialChanged = false;
     public bool directionChanged = false;
+    public bool gravityChanged = false;
 
     private float speedIfChanged;
     private float jumpHeightIfChanged;
@@ -32,7 +33,7 @@ public class playerController : MonoBehaviour {
     private bool canJump = true;
     private Rigidbody rb;
 
-    private float timePassed=0;
+    private float timePassed = 0;
 
     void Start()
     {
@@ -45,22 +46,32 @@ public class playerController : MonoBehaviour {
     void FixedUpdate()
     {
         //wenn das material der Kugel verändert wurde:
-        if(materialChanged)
+        if (materialChanged)
         {
             //Zeit messen
             timePassed += Time.deltaTime;
-            if(timePassed>=powerUpTime)
+            if (timePassed >= powerUpTime)
             {
                 //material + timer zurücksetzen
                 deactivatePowerUp();
             }
         }
 
-        //TODO: Gravitation drehen implementieren
-        //gravitation
-        //rb.velocity.y += gravity * Time.deltaTime;
-        //gravityDirection= new Vector3(9.81f, 0f, 0f);
-        //Physics.gravity = gravityDirection;
+        if (Input.GetKey("t"))
+        { 
+            //TODO: Gravitation drehen implementieren
+            //gravitation
+            //rb.velocity.y += gravity * Time.deltaTime;
+            gravityDirection = new Vector3(9.81f, 0f, 0f);
+            Physics.gravity = gravityDirection;
+            gravityChanged = true;
+            //mainCamera.transform.RotateAround(transform.position, new Vector3(0, 0, 1), 90);
+        }else{
+            gravityDirection = new Vector3(0f, -9.81f, 0f);
+            Physics.gravity = gravityDirection;
+            gravityChanged = false;
+        }
+        
 
         Vector3 fromCameraToMe = transform.position - mainCamera.transform.position;
         fromCameraToMe.y = 0;
@@ -126,13 +137,11 @@ public class playerController : MonoBehaviour {
 
     private void jump()
     {
-        float jump = 0;
-        print("button pressed");
-        jump = jumpHeight;
         MusicSource.clip = jumpSound;
         MusicSource.volume = 0.8f;
         MusicSource.Play();
-        Vector3 movement = new Vector3(0f, jump, 0f);
+        Vector3 jumpDirection = -Vector3.Normalize(gravityDirection);
+        Vector3 movement = jumpDirection*jumpHeight;
         rb.AddForce(movement);
     }
 }
