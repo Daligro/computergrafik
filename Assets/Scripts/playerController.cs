@@ -68,8 +68,6 @@ public class playerController : MonoBehaviour {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        float jump = 0;
-
         if(canJump)
         {
             rb.angularDrag = friction;
@@ -79,17 +77,22 @@ public class playerController : MonoBehaviour {
             rb.angularDrag = 0.1f;
         }
 
-        if (Input.GetButton("Jump") && canJump)
-        {
-            jump = 1 * jumpHeight;
-            MusicSource.clip = jumpSound;
-            MusicSource.volume = 0.8f;
-            MusicSource.Play();
-        }
-        Vector3 movement = (fromCameraToMe * moveVertical + mainCamera.transform.right * moveHorizontal)*speed;
-        movement.y += jump;
+
+        Vector3 movement = (fromCameraToMe * moveVertical + mainCamera.transform.right * moveHorizontal) * speed;
 
         rb.AddForce(movement);
+    }
+
+    //contains: jump
+    void LateUpdate()
+    {
+        if (canJump)
+            print("canjump");
+
+        if (Input.GetButton("Jump") && canJump)
+        {
+            jump();
+        }
     }
 
     void OnCollisionEnter(Collision other)
@@ -98,8 +101,14 @@ public class playerController : MonoBehaviour {
         MusicSource.clip = bounceSound;
         MusicSource.volume = volumeSpeedScale * speed;
         MusicSource.Play();
-        if (other.gameObject.tag.Equals("Floor")) 
-            canJump = true;
+        print("canjump1");
+        if (other.gameObject.tag.Equals("Floor")) {
+            if (Input.GetButton("Jump"))
+                jump();
+            else
+                canJump = true;
+            print("canjump2");
+        }
     }
 
     void OnCollisionExit(Collision other)
@@ -116,6 +125,17 @@ public class playerController : MonoBehaviour {
         speed = speedIfChanged;
         jumpHeight = jumpHeightIfChanged;
         friction = frictionIfChanged;
+    }
 
+    private void jump()
+    {
+        float jump = 0;
+        print("button pressed");
+        jump = jumpHeight;
+        MusicSource.clip = jumpSound;
+        MusicSource.volume = 0.8f;
+        MusicSource.Play();
+        Vector3 movement = new Vector3(0f, jump, 0f);
+        rb.AddForce(movement);
     }
 }
