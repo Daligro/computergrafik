@@ -43,14 +43,14 @@ public class cameraController : MonoBehaviour {
 
     [Range(1,250)]
     public int xSpeed = 250;
-    [Range(1, 120)]
+    [Range(1, 300)]
     public int ySpeed = 120;
 
     int yMinLimit = -20;
     int yMaxLimit = 80;
 
-    int distanceMin = 3;
-    int distanceMax = 15;
+    int distanceMin = 10;
+    int distanceMax = 10;
 
     private float x = 0.0f;
     private float y = 0.0f;
@@ -61,7 +61,7 @@ public class cameraController : MonoBehaviour {
 
     void Start()
     {
-        var angles = transform.eulerAngles;
+        Vector3 angles = transform.eulerAngles;
         x = angles.y;
         y = angles.x;
 
@@ -88,7 +88,12 @@ public class cameraController : MonoBehaviour {
             }
             y = ClampAngle(y, yMinLimit, yMaxLimit);
 
-            var rotation = Quaternion.Euler(y, x, 0);
+            Quaternion rotation;
+
+            if (!player.GetComponent<playerController>().gravityChanged)
+                rotation = Quaternion.Euler(y, x, 0);
+            else
+                rotation = Quaternion.Euler(-x, y, 90f);
 
             distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax);
 
