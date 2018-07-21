@@ -87,7 +87,6 @@ public class playerController : MonoBehaviour {
     void LateUpdate()
     {
         if (canJump)
-            print("canjump");
 
         if (Input.GetButton("Jump") && canJump)
         {
@@ -101,13 +100,11 @@ public class playerController : MonoBehaviour {
         MusicSource.clip = bounceSound;
         MusicSource.volume = volumeSpeedScale * speed;
         MusicSource.Play();
-        print("canjump1");
         if (other.gameObject.tag.Equals("Floor")) {
             if (Input.GetButton("Jump"))
                 jump();
             else
                 canJump = true;
-            print("canjump2");
         }
     }
 
