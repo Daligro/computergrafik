@@ -54,7 +54,8 @@ public class PlayerController : MonoBehaviour {
         speedIfChanged = speed;
         jumpHeightIfChanged = jumpHeight;
         frictionIfChanged = friction;
-        remainingLivesText.text = "Leben: " + lives.ToString();
+        if(lives>=0)
+            remainingLivesText.text = "Leben: " + lives.ToString();
     }
     void FixedUpdate()
     {
