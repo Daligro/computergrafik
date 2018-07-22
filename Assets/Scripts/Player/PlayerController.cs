@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -14,10 +15,17 @@ public class PlayerController : MonoBehaviour {
     public float volumeSpeedScale;
     [Range(0.1f, 20f)]
     public float gravity;
+    [Range(0, 30)]
+    public int respawnTimer;
+
     public Vector3 gravityDirection;
+
+    public Text winLoseText;
+    public Text remainingLivesText;
 
     public int powerUpTime;
     public GameObject mainCamera;
+    public GameObject respawner;
     public AudioClip jumpSound;
     public AudioClip bounceSound;
     public AudioSource MusicSource;
@@ -25,6 +33,7 @@ public class PlayerController : MonoBehaviour {
     public bool materialChanged = false;
     public bool directionChanged = false;
     public bool gravityChanged = false;
+    public int lives;
 
     private float speedIfChanged;
     private float jumpHeightIfChanged;
@@ -45,11 +54,10 @@ public class PlayerController : MonoBehaviour {
         speedIfChanged = speed;
         jumpHeightIfChanged = jumpHeight;
         frictionIfChanged = friction;
-        print("player started");
+        remainingLivesText.text = "Leben: " + lives.ToString();
     }
     void FixedUpdate()
     {
-
         //wenn das material der Kugel verändert wurde:
         if (materialChanged)
         {
@@ -64,8 +72,7 @@ public class PlayerController : MonoBehaviour {
 
         if(Input.GetKey("r"))
         {
-            transform.position = defaultPosition;
-            rb.velocity = new Vector3(0f, 0f, 0f);
+            instantDeath();
         }
 
         if (Input.GetKey("t"))
@@ -82,8 +89,6 @@ public class PlayerController : MonoBehaviour {
             Physics.gravity = gravityDirection;
             gravityChanged = false;
         }
-
-        print("player started3");
 
         Vector3 fromCameraToMe = transform.position - mainCamera.transform.position;
         fromCameraToMe.y = 0;
@@ -145,6 +150,9 @@ public class PlayerController : MonoBehaviour {
         friction = frictionIfChanged;
     }
 
+    /**
+     * makes the player Jump in the opposite directen of the gravitational direction
+     */
     private void jump()
     {
         canJump = false;
@@ -154,5 +162,58 @@ public class PlayerController : MonoBehaviour {
         Vector3 jumpDirection = -Vector3.Normalize(gravityDirection);
         Vector3 movement = jumpDirection*jumpHeight;
         rb.AddForce(movement);
+    }
+
+    /**
+     * disables gameobject and starts the respawn
+     **/
+    public void instantDeath()
+    {
+        respawn();
+        gameObject.SetActive(false);
+    }
+
+    /**
+     *starts coroutine "RespawnCoroutine" on the gameobject "respawner" 
+     **/
+    private void respawn()
+    {
+        if (lives > 0)
+        {
+            respawner.GetComponent<RespawnController>().StartCoroutine(RespawnCoroutine(gameObject, defaultPosition, respawnTimer));
+            lives--;
+            remainingLivesText.text = "Leben: " + lives.ToString();
+            if (lives == 0)
+                remainingLivesText.color = Color.red;
+        }else if (lives == 0)
+        {
+            lose();
+        }
+        else
+        {
+            respawner.GetComponent<RespawnController>().StartCoroutine(RespawnCoroutine(gameObject, defaultPosition, respawnTimer));
+        }
+    }
+
+    /**
+     * makes the player "gameObject" respawn respawn at location "respawnPosition" within "respawnTimer" seconds
+     **/
+    private IEnumerator RespawnCoroutine(GameObject gameObject,Vector3 respawnPosition, int respawnTimer)
+    {
+        yield return new WaitForSeconds(respawnTimer);
+        gameObject.SetActive(true);
+        transform.position = respawnPosition;
+        gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+    }
+
+    private void win()
+    {
+        winLoseText.text = "Juhu! Sie haben gewonnen.";
+    }
+
+    private void lose()
+    {
+        winLoseText.color = Color.red;
+        winLoseText.text = "Sie haben leider verloren.";
     }
 }

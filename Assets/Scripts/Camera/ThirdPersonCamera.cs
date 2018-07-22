@@ -33,6 +33,8 @@ public class ThirdPersonCamera : MonoBehaviour {
     private float HorizontalAxis;
     private float VerticalAxis;
 
+    private Vector3 up;
+
     // Use this for initialization
     void Start()
     {
@@ -44,6 +46,7 @@ public class ThirdPersonCamera : MonoBehaviour {
 
     void LateUpdate()
     {
+        up = Vector3.Normalize(target.GetComponent<PlayerController>().gravityDirection);
 
         HorizontalAxis = Input.GetAxis("Horizontal");
         VerticalAxis = Input.GetAxis("Vertical");
@@ -55,8 +58,8 @@ public class ThirdPersonCamera : MonoBehaviour {
         Vector3 rotateVector = rotation * vectorMask;
         //this determines where both the camera and it's mask will be.
         //the camMask is for forcing the camera to push away from walls.
-        camPosition = targetOffset + Vector3.up * DistanceUp - rotateVector * DistanceAway;
-        camMask = targetOffset + Vector3.up * DistanceUp - rotateVector * DistanceAway;
+        camPosition = targetOffset + up * DistanceUp - rotateVector * DistanceAway;
+        camMask = targetOffset + up * DistanceUp - rotateVector * DistanceAway;
 
         occludeRay(ref targetOffset);
         smoothCamMethod();
@@ -75,13 +78,13 @@ public class ThirdPersonCamera : MonoBehaviour {
         #endregion
 
         rotateAround += HorizontalAxis * camRotateSpeed * Time.deltaTime;
+       // transform.RotateAround(target.position, new Vector3(-1f, 0f, -1f), 45); // wrooooooong
         //DistanceUp = Mathf.Clamp(DistanceUp += VerticalAxis, -0.79f, 2.3f);
         DistanceAway = Mathf.Clamp(DistanceAway += VerticalAxis, minDistance, maxDistance);
 
     }
     void smoothCamMethod()
     {
-
         smooth = 4f;
         transform.position = Vector3.Lerp(transform.position, camPosition, Time.deltaTime * smooth);
     }

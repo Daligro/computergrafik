@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour {
 
     public float lookRadius = 10f;
+    public float rotationSpeed = 5f;
+    public float speed = 1f;
 
     Transform target;
     NavMeshAgent agent;
@@ -14,6 +16,7 @@ public class EnemyController : MonoBehaviour {
 	void Start () {
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
+        agent.speed = speed;
 	}
 	
 	// Update is called once per frame
@@ -36,7 +39,7 @@ public class EnemyController : MonoBehaviour {
     {
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speed);
     }
 
     private void OnDrawGizmosSelected()
@@ -44,4 +47,5 @@ public class EnemyController : MonoBehaviour {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
+
 }
