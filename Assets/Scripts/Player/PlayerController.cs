@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
     public Text winLoseText;
     public Text remainingLivesText;
 
+    public Text coinScore;
+
     public int powerUpTime;
     public GameObject mainCamera;
     public GameObject respawner;
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour {
     public bool directionChanged = false;
     public bool gravityChanged = false;
     public int lives;
+    public int score;
 
     private float speedIfChanged;
     private float jumpHeightIfChanged;
@@ -55,6 +58,7 @@ public class PlayerController : MonoBehaviour {
         jumpHeightIfChanged = jumpHeight;
         frictionIfChanged = friction;
         remainingLivesText.text = "Leben: " + lives.ToString();
+        coinScore.text = "Münzen: " + score.ToString();
     }
     void FixedUpdate()
     {
