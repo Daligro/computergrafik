@@ -183,9 +183,7 @@ public class PlayerController : MonoBehaviour {
         {
             respawner.GetComponent<RespawnController>().StartCoroutine(RespawnCoroutine(gameObject, defaultPosition, respawnTimer));
             lives--;
-            remainingLivesText.text = "Leben: " + lives.ToString();
-            if (lives == 0)
-                remainingLivesText.color = Color.red;
+            updateLivesText();
         }else if (lives == 0)
         {
             lose();
@@ -205,6 +203,13 @@ public class PlayerController : MonoBehaviour {
         gameObject.SetActive(true);
         transform.position = respawnPosition;
         gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+    }
+
+    public void updateLivesText()
+    {
+        remainingLivesText.text = "Leben: " + lives.ToString();
+        if (lives == 0)
+            remainingLivesText.color = Color.red;
     }
 
     private void win()
