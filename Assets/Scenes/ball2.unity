@@ -8542,7 +8542,7 @@ GameObject:
   - component: {fileID: 740904188}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10349,11 +10349,14 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: 18e0cdd859b8b024b8101763af13b123, type: 2}
   - {fileID: 2100000, guid: 7490af4c2a1be2244bace8f7abf36cef, type: 2}
+  - {fileID: 2100000, guid: 345130f7e9f58a24d8cd755d8d2fa66b, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: e96d08e4d5f74b94898dc0a3a58297e8, type: 2}
   respawnTime: 5
   box: {fileID: 1552137034}
   pickupSound: {fileID: 8300000, guid: b73cae7b091978f4592210104b4a5d9f, type: 3}
   MusicSource: {fileID: 643269174}
   powerUpText: {fileID: 1534154479}
+  enemiesDisabledTime: 15
 --- !u!65 &914150569
 BoxCollider:
   m_ObjectHideFlags: 0
