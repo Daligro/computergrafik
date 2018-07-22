@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour {
     private float jumpHeightIfChanged;
     private float frictionIfChanged;
 
+    private Vector3 defaultPosition;
+
     private bool canJump = true;
     private Rigidbody rb;
 
@@ -37,14 +39,17 @@ public class PlayerController : MonoBehaviour {
 
     void Start()
     {
+        defaultPosition = transform.position;
         rb = GetComponent<Rigidbody>();
         rb.angularDrag = friction;
         speedIfChanged = speed;
         jumpHeightIfChanged = jumpHeight;
         frictionIfChanged = friction;
+        print("player started");
     }
     void FixedUpdate()
     {
+
         //wenn das material der Kugel verändert wurde:
         if (materialChanged)
         {
@@ -55,6 +60,12 @@ public class PlayerController : MonoBehaviour {
                 //material + timer zurücksetzen
                 deactivatePowerUp();
             }
+        }
+
+        if(Input.GetKey("r"))
+        {
+            transform.position = defaultPosition;
+            rb.velocity = new Vector3(0f, 0f, 0f);
         }
 
         if (Input.GetKey("t"))
@@ -71,7 +82,8 @@ public class PlayerController : MonoBehaviour {
             Physics.gravity = gravityDirection;
             gravityChanged = false;
         }
-        
+
+        print("player started3");
 
         Vector3 fromCameraToMe = transform.position - mainCamera.transform.position;
         fromCameraToMe.y = 0;
@@ -135,6 +147,7 @@ public class PlayerController : MonoBehaviour {
 
     private void jump()
     {
+        canJump = false;
         MusicSource.clip = jumpSound;
         MusicSource.volume = 0.8f;
         MusicSource.Play();
