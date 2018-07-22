@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8671753, g: 0.672445, b: 0.5176637, a: 1}
+  m_IndirectSpecularColor: {r: 0.8671712, g: 0.6724327, b: 0.51767623, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,8 +136,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &25579307
 MeshCollider:
@@ -198,11 +198,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -336,8 +336,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -352,8 +352,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -664,11 +664,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -1006,7 +1006,7 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_MeshCompression: 0
   m_IsReadable: 1
@@ -1074,59 +1074,59 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0.6811471, y: 2.0876708, z: 3.6284075}
     m_Extent: {x: 3.952602, y: 2.0876708, z: 3.6284075}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshOptimized: 0
 --- !u!1 &155425536
 GameObject:
@@ -1153,8 +1153,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82172d9a8326f574f85ef34db8108ac5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   player: {fileID: 1026777340}
 --- !u!4 &155425538
 Transform:
@@ -1387,8 +1387,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_AgentTypeID: 0
   m_CollectObjects: 0
   m_Size: {x: 10, y: 10, z: 10}
@@ -1425,8 +1425,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &188575723
 MeshCollider:
@@ -1575,8 +1575,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -1598,7 +1598,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text:
 --- !u!222 &197259683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1682,8 +1682,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &202294059
 MeshCollider:
@@ -1867,11 +1867,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -2123,11 +2123,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -2343,8 +2343,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2366,7 +2366,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text:
 --- !u!222 &265238203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2478,8 +2478,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99b6ce63ea143b74baaf60684423cc33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   player: {fileID: 1026777340}
   xSpeed: 250
   ySpeed: 120
@@ -2541,8 +2541,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6dde2c02687728428340be7d39150cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   minDistance: 4
   maxDistance: 4
   DistanceUp: 0.95
@@ -2746,8 +2746,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &318658289
 MeshCollider:
@@ -3120,11 +3120,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -3198,11 +3198,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -3350,11 +3350,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 08b66aed3b695d74699a06cc2b294028, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 2300000, guid: 08b66aed3b695d74699a06cc2b294028, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 400000, guid: 08b66aed3b695d74699a06cc2b294028, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3532,8 +3532,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!1001 &407781008
 Prefab:
@@ -3675,7 +3675,7 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_MeshCompression: 0
   m_IsReadable: 1
@@ -3743,59 +3743,59 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.5, y: 0.5, z: 0.5}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshOptimized: 0
 --- !u!1001 &420311078
 Prefab:
@@ -3966,15 +3966,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: fb3216a7b2e2b534ab05b6569a753957, type: 3}
       propertyPath: m_Materials.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 6283aff8f1c377143a14c98b6e159892, type: 2}
     - target: {fileID: 2300002, guid: fb3216a7b2e2b534ab05b6569a753957, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 8afa40a6ed7e0b846aa87087bfc132e7, type: 2}
     - target: {fileID: 2300002, guid: fb3216a7b2e2b534ab05b6569a753957, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 6283aff8f1c377143a14c98b6e159892, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb3216a7b2e2b534ab05b6569a753957, type: 3}
@@ -4130,8 +4130,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &495322540
 MeshCollider:
@@ -4428,8 +4428,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!1 &573013414
 GameObject:
@@ -4626,12 +4626,7 @@ Transform:
   m_LocalPosition: {x: 54.15, y: 14.54, z: 76.03}
   m_LocalScale: {x: 0.49999994, y: 0.5, z: 0.49999994}
   m_Children:
-  - {fileID: 2136760002}
-  - {fileID: 595470227}
-  - {fileID: 1192466270}
-  - {fileID: 2127100076}
-  - {fileID: 1193507776}
-  - {fileID: 1853964557}
+  - {fileID: 186685787}
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4754,8 +4749,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26eff56afca94b34e98a1f87f312d551, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Rotation: 50
 --- !u!65 &578883965
 BoxCollider:
@@ -4853,8 +4848,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_AgentTypeID: 0
   m_CollectObjects: 0
   m_Size: {x: 10, y: 10, z: 10}
@@ -5085,8 +5080,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &614525809
 MeshCollider:
@@ -5260,8 +5255,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &622831436
 MeshCollider:
@@ -5381,8 +5376,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &631790274
 MeshCollider:
@@ -5564,8 +5559,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec753a99377ea5548a4e4520049e742d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &649747710
 Prefab:
   m_ObjectHideFlags: 0
@@ -5656,7 +5651,7 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_MeshCompression: 0
   m_IsReadable: 1
@@ -5724,59 +5719,59 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: -1.5, y: 1.9524219, z: 2}
     m_Extent: {x: 1.5, y: 1.9524219, z: 2}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshOptimized: 0
 --- !u!1 &659233740
 GameObject:
@@ -5821,8 +5816,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _quads:
   - _indices: 000000000100000002000000010000000300000002000000
     _distinctIndices: 00000000010000000200000003000000
@@ -7988,11 +7983,11 @@ MonoBehaviour:
     packMargin: 4
     angleError: 8
     areaError: 15
-  asset_guid: 
+  asset_guid:
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
+  m_selectedFaces:
   m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedTriangles:
 --- !u!33 &659233743
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8044,8 +8039,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _entityType: 0
 --- !u!4 &659233746
 Transform:
@@ -8186,11 +8181,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -8305,8 +8300,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!1001 &693240715
 Prefab:
@@ -8349,11 +8344,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -8694,7 +8689,7 @@ GameObject:
   - component: {fileID: 740904188}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8839,8 +8834,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -8857,8 +8852,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -8958,8 +8953,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 110b072b923690d4ea7945ad924b4859, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!65 &777657062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9013,11 +9008,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -9082,8 +9077,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcca2573ff212a2489d2a263d20c0b00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   lookRadius: 20
   rotationSpeed: 100
   speed: 500
@@ -9315,8 +9310,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &804303779
 MeshCollider:
@@ -9373,11 +9368,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -9439,11 +9434,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -9612,11 +9607,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -9783,8 +9778,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _quads:
   - _indices: 000000000100000002000000000000000200000003000000
     _distinctIndices: 00000000010000000200000003000000
@@ -10103,11 +10098,11 @@ MonoBehaviour:
     packMargin: 4
     angleError: 8
     areaError: 15
-  asset_guid: 
+  asset_guid:
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
+  m_selectedFaces:
   m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedTriangles:
 --- !u!114 &886193947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10117,8 +10112,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _entityType: 0
 --- !u!1001 &891947770
 Prefab:
@@ -10386,8 +10381,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec753a99377ea5548a4e4520049e742d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &911961299
 Transform:
   m_ObjectHideFlags: 0
@@ -10442,15 +10437,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8936aaeea92a304db64a2f6f866b234, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   materials:
   - {fileID: 2100000, guid: 18e0cdd859b8b024b8101763af13b123, type: 2}
   - {fileID: 2100000, guid: 7490af4c2a1be2244bace8f7abf36cef, type: 2}
-  respawnTime: 20
+  - {fileID: 2100000, guid: 345130f7e9f58a24d8cd755d8d2fa66b, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: e96d08e4d5f74b94898dc0a3a58297e8, type: 2}
+  respawnTime: 5
   box: {fileID: 1552137034}
   pickupSound: {fileID: 8300000, guid: b73cae7b091978f4592210104b4a5d9f, type: 3}
   MusicSource: {fileID: 643269174}
+  powerUpText: {fileID: 1534154479}
+  enemiesDisabledTime: 15
 --- !u!65 &914150569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10662,8 +10661,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &935308399
 MeshCollider:
@@ -10727,8 +10726,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _quads:
   - _indices: 000000000100000002000000010000000300000002000000
     _distinctIndices: 00000000010000000200000003000000
@@ -12894,11 +12893,11 @@ MonoBehaviour:
     packMargin: 4
     angleError: 8
     areaError: 15
-  asset_guid: 
+  asset_guid:
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
+  m_selectedFaces:
   m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedTriangles:
 --- !u!33 &944992794
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12950,8 +12949,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _entityType: 0
 --- !u!4 &944992797
 Transform:
@@ -12998,8 +12997,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcca2573ff212a2489d2a263d20c0b00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   lookRadius: 1000
   rotationSpeed: 100
   speed: 5000
@@ -13212,8 +13211,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &988885680
 MeshCollider:
@@ -13378,7 +13377,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: e7be0ab1f1efb804aad4e5c4118a911f, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7be0ab1f1efb804aad4e5c4118a911f, type: 3}
@@ -13420,8 +13419,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!4 &1019750435 stripped
 Transform:
@@ -13581,8 +13580,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a3d88ef58221ea4da1aa3382b2c543f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   speed: 6.9
   jumpHeight: 448
   friction: 2.16
@@ -13592,7 +13591,7 @@ MonoBehaviour:
   gravityDirection: {x: 1, y: 1, z: 1}
   winLoseText: {fileID: 197259682}
   remainingLivesText: {fileID: 265238202}
-  powerUpTime: 10
+  powerUpTime: 4
   mainCamera: {fileID: 282840810}
   respawner: {fileID: 911961297}
   jumpSound: {fileID: 8300000, guid: c56304c5629c6ce43b65203ceef02195, type: 3}
@@ -13644,11 +13643,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -13764,11 +13763,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 400000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_LocalScale.x
@@ -13804,8 +13803,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1088350180
 MeshCollider:
@@ -13974,11 +13973,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -14164,8 +14163,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _quads:
   - _indices: 000000000100000002000000010000000300000002000000
     _distinctIndices: 00000000010000000200000003000000
@@ -16331,11 +16330,11 @@ MonoBehaviour:
     packMargin: 4
     angleError: 8
     areaError: 15
-  asset_guid: 
+  asset_guid:
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
+  m_selectedFaces:
   m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedTriangles:
 --- !u!33 &1118789397
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16387,8 +16386,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _entityType: 0
 --- !u!4 &1118789400
 Transform:
@@ -16983,7 +16982,7 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_MeshCompression: 0
   m_IsReadable: 1
@@ -17051,59 +17050,59 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: -1.5, y: 1.9524219, z: 2}
     m_Extent: {x: 1.5, y: 1.9524219, z: 2}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshOptimized: 0
 --- !u!4 &1168504524 stripped
 Transform:
@@ -17182,8 +17181,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1170712989
 MeshCollider:
@@ -17572,8 +17571,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1237983727
 MeshCollider:
@@ -17694,8 +17693,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _quads:
   - _indices: 000000000100000002000000010000000300000002000000
     _distinctIndices: 00000000010000000200000003000000
@@ -19861,11 +19860,11 @@ MonoBehaviour:
     packMargin: 4
     angleError: 8
     areaError: 15
-  asset_guid: 
+  asset_guid:
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
+  m_selectedFaces:
   m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedTriangles:
 --- !u!33 &1257452756
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19917,8 +19916,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _entityType: 0
 --- !u!4 &1257452759
 Transform:
@@ -19978,11 +19977,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -20060,7 +20059,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: c1a1f1e9b694fcc4db29bff84c076982, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 072a1e4ac4c822a4490685eb413d824e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1a1f1e9b694fcc4db29bff84c076982, type: 3}
@@ -20205,7 +20204,7 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_MeshCompression: 0
   m_IsReadable: 1
@@ -20273,59 +20272,59 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.5, y: 0.5, z: 0.5}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshOptimized: 0
 --- !u!1001 &1297557347
 Prefab:
@@ -20400,8 +20399,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1303413104
 MeshCollider:
@@ -20591,11 +20590,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 057a0828d381e884e8e50080df247cc0, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 0094a3359c1018b4cadd45ca1a8de4a0, type: 2}
     - target: {fileID: 2300000, guid: 057a0828d381e884e8e50080df247cc0, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 057a0828d381e884e8e50080df247cc0, type: 3}
@@ -21383,8 +21382,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1460362525
 MeshCollider:
@@ -21443,8 +21442,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _quads:
   - _indices: 000000000100000002000000010000000300000002000000
     _distinctIndices: 00000000010000000200000003000000
@@ -24094,11 +24093,11 @@ MonoBehaviour:
     packMargin: 4
     angleError: 8
     areaError: 15
-  asset_guid: 
+  asset_guid:
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
+  m_selectedFaces:
   m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedTriangles:
 --- !u!33 &1461744399
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24150,8 +24149,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _entityType: 0
 --- !u!4 &1461744402
 Transform:
@@ -24294,8 +24293,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1486686445
 MeshCollider:
@@ -24499,11 +24498,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -24611,8 +24610,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 110b072b923690d4ea7945ad924b4859, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!65 &1505419452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24768,6 +24767,80 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a6456b9419960c543890384b83ae02ef, type: 3}
   m_PrefabInternal: {fileID: 1406477050}
+--- !u!1 &1534154477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1534154478}
+  - component: {fileID: 1534154480}
+  - component: {fileID: 1534154479}
+  m_Layer: 5
+  m_Name: PowerUps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1534154478
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1534154477}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 59094003}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 90}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1534154479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1534154477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0.035294056, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text:
+--- !u!222 &1534154480
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1534154477}
 --- !u!1001 &1534469612
 Prefab:
   m_ObjectHideFlags: 0
@@ -24921,8 +24994,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26eff56afca94b34e98a1f87f312d551, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Rotation: 50
 --- !u!65 &1552137037
 BoxCollider:
@@ -25071,11 +25144,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ee303d330c513d546b05d3b9c9965f54, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 2300000, guid: ee303d330c513d546b05d3b9c9965f54, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 0094a3359c1018b4cadd45ca1a8de4a0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee303d330c513d546b05d3b9c9965f54, type: 3}
@@ -25098,8 +25171,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1581430445
 MeshCollider:
@@ -25163,8 +25236,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -25186,7 +25259,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text:
 --- !u!222 &1594058084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25339,15 +25412,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: bb599c749b5f1984fa87d5f1d19f0b17, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 0094a3359c1018b4cadd45ca1a8de4a0, type: 2}
     - target: {fileID: 2300000, guid: bb599c749b5f1984fa87d5f1d19f0b17, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 2300000, guid: bb599c749b5f1984fa87d5f1d19f0b17, type: 3}
       propertyPath: m_Materials.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: eff8841dfa6420543b5c61f4f39d8576, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb599c749b5f1984fa87d5f1d19f0b17, type: 3}
@@ -25366,8 +25439,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1623754371
 MeshCollider:
@@ -25407,7 +25480,7 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_MeshCompression: 0
   m_IsReadable: 1
@@ -25475,59 +25548,59 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: -1.5, y: 1.9524219, z: 2}
     m_Extent: {x: 1.5, y: 1.9524219, z: 2}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshOptimized: 0
 --- !u!4 &1626723258 stripped
 Transform:
@@ -25785,8 +25858,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _quads:
   - _indices: 000000000100000002000000000000000200000003000000
     _distinctIndices: 00000000010000000200000003000000
@@ -26105,11 +26178,11 @@ MonoBehaviour:
     packMargin: 4
     angleError: 8
     areaError: 15
-  asset_guid: 
+  asset_guid:
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
+  m_selectedFaces:
   m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedTriangles:
 --- !u!114 &1648452403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26119,8 +26192,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _entityType: 0
 --- !u!65 &1648452404
 BoxCollider:
@@ -26426,8 +26499,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!1001 &1702171205
 Prefab:
@@ -26474,7 +26547,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 0b32a3aa1c4b8854e88b67b3b86623eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 54afde2e43eef864d804b969bd9626bc, type: 2}
     - target: {fileID: 400000, guid: 0b32a3aa1c4b8854e88b67b3b86623eb, type: 3}
       propertyPath: m_LocalScale.x
@@ -26988,8 +27061,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcca2573ff212a2489d2a263d20c0b00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   lookRadius: 20
   rotationSpeed: 100
   speed: 500
@@ -27097,11 +27170,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -27157,8 +27230,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1817844881
 MeshCollider:
@@ -27193,8 +27266,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1822932324
 MeshCollider:
@@ -27462,7 +27535,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: bcd6ab77225bdc94498f00e4fb3ea55d, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 54afde2e43eef864d804b969bd9626bc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcd6ab77225bdc94498f00e4fb3ea55d, type: 3}
@@ -27806,8 +27879,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1900162782
 MeshCollider:
@@ -28107,8 +28180,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 110b072b923690d4ea7945ad924b4859, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!65 &1910920379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28162,11 +28235,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -28277,8 +28350,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1938950583
 MeshCollider:
@@ -28611,8 +28684,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &1971927291
 MeshCollider:
@@ -29064,8 +29137,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a75a111899ddc24f9c2cf726d0cc795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   coinSound: {fileID: 8300000, guid: fa033ae7266ac4442b2e75da2a098442, type: 3}
 --- !u!64 &2048733293
 MeshCollider:
@@ -29204,7 +29277,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2351782, guid: 392192046514d4e4c8742dc8fe055de2, type: 2}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 92f161029a6d3c54a92d9d283352a135, type: 2}
     - target: {fileID: 454010, guid: 392192046514d4e4c8742dc8fe055de2, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -29241,7 +29314,7 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose: []
-  m_BoneNameHashes: 
+  m_BoneNameHashes:
   m_RootBoneNameHash: 0
   m_MeshCompression: 0
   m_IsReadable: 1
@@ -29309,59 +29382,59 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UV:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Normals:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Weights:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_NormalSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_Triangles:
       m_NumItems: 0
-      m_Data: 
+      m_Data:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: -1.5, y: 1.9524219, z: 2}
     m_Extent: {x: 1.5, y: 1.9524219, z: 2}
   m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
   m_MeshOptimized: 0
 --- !u!4 &2070736345 stripped
 Transform:
@@ -29658,11 +29731,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name
@@ -29985,11 +30058,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 324adb8e785314943827790ed165f156, type: 2}
     - target: {fileID: 2300000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: fd5dea7afba072d41b6ac9d881220912, type: 2}
     - target: {fileID: 100000, guid: ca6d1531a07d9a040bf893d90a90b760, type: 3}
       propertyPath: m_Name

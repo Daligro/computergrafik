@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class PickupCollider : MonoBehaviour {
 
     public Material[] materials;
+    public Material defaultMaterial;
     public int respawnTime;
     public GameObject box;
     public AudioClip pickupSound;
     public AudioSource MusicSource;
+    public Text powerUpText;
+    public int enemiesDisabledTime;
 
     private float timePassed = 0;
     private bool respawned = true;
@@ -38,17 +42,21 @@ public class PickupCollider : MonoBehaviour {
         System.Random rnd = new System.Random();
         if (respawned)
         {
-            switch (rnd.Next(0,materials.Length)) {
-                case 0: activateSpeedball(other); break;
+            switch (rnd.Next(0,4)) {
+                case 0: powerUpactivateSpeedball(other); break;
 
-                case 1: activateJumpball(other); break;
+                case 1: powerUpactivateJumpball(other); break;
+
+                case 2: powerUpactivateExtraLive(other); break;
+
+                case 3: powerUpDisableEnemies(other); break;
 
                 default: break;
             }
         }
     }
 
-    private void activateSpeedball(Collider other)
+    private void powerUpactivateSpeedball(Collider other)
     {
         MusicSource.clip = pickupSound;
         MusicSource.Play();
@@ -57,9 +65,11 @@ public class PickupCollider : MonoBehaviour {
         other.gameObject.GetComponent<Renderer>().material = materials[0];
         other.GetComponent<PlayerController>().materialChanged = true;
         other.GetComponent<PlayerController>().speed *= 3f;
+        powerUpText.text = "Speedball aktiviert";
+        StartCoroutine(hidePowerUpText());
     }
 
-    private void activateJumpball(Collider other)
+    private void powerUpactivateJumpball(Collider other)
     {
         MusicSource.clip = pickupSound;
         MusicSource.Play();
@@ -68,5 +78,56 @@ public class PickupCollider : MonoBehaviour {
         other.gameObject.GetComponent<Renderer>().material = materials[1];
         other.GetComponent<PlayerController>().materialChanged = true;
         other.GetComponent<PlayerController>().jumpHeight *= 3f;
+        powerUpText.text = "Jumpball aktiviert";
+        StartCoroutine(hidePowerUpText());
+    }
+
+    private void powerUpactivateExtraLive(Collider other)
+    {
+        if (other.GetComponent<PlayerController>().lives < 0)
+            OnTriggerEnter(other);
+        MusicSource.clip = pickupSound;
+        MusicSource.Play();
+        box.SetActive(false);
+        respawned = false;
+        other.GetComponent<PlayerController>().lives++;
+        other.GetComponent<PlayerController>().updateLivesText();
+        powerUpText.text = "1-UP";
+        StartCoroutine(hidePowerUpText());
+    }
+
+    private void powerUpDisableEnemies(Collider other)
+    {
+        MusicSource.clip = pickupSound;
+        MusicSource.Play();
+        box.SetActive(false);
+        respawned = false;
+        other.gameObject.GetComponent<Renderer>().material = materials[2];
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemies");
+        for(int i = 0; i<enemies.Length; i++)
+        {
+            enemies[i].SetActive(false);
+        }
+        StartCoroutine(reactivateEnemies(enemies, other));
+
+        powerUpText.text = "Enemies Disabled";
+        StartCoroutine(hidePowerUpText());
+    }
+
+    private IEnumerator hidePowerUpText()
+    {
+        yield return new WaitForSeconds(2);
+        powerUpText.text = "";
+    }
+
+    private IEnumerator reactivateEnemies(GameObject[] enemies, Collider other)
+    {
+        yield return new WaitForSeconds(enemiesDisabledTime);
+        other.gameObject.GetComponent<Renderer>().material = defaultMaterial;
+
+        for (int i = 0; i<enemies.Length; i++)
+        {
+            enemies[i].SetActive(true);
+        }
     }
 }
