@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 2108210716, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
-  topLeft: {r: 0.7924528, g: 0.61132073, b: 0, a: 1}
-  topRight: {r: 1, g: 0.77219784, b: 0.24056602, a: 1}
-  bottomLeft: {r: 1, g: 0.75268996, b: 0, a: 1}
-  bottomRight: {r: 1, g: 0.8727012, b: 0.6179246, a: 1}
+  topLeft: {r: 1, g: 0.87432283, b: 0.4481132, a: 1}
+  topRight: {r: 1, g: 0.70244116, b: 0.0047169924, a: 1}
+  bottomLeft: {r: 1, g: 0.85199785, b: 0.4009434, a: 1}
+  bottomRight: {r: 1, g: 0.6701031, b: 0, a: 1}
