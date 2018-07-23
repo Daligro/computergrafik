@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour {
 
     Transform target;
     NavMeshAgent agent;
+    CharacterAnimator animator;
 
 	// Use this for initialization
 	void Start () {
