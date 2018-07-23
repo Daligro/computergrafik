@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     [Range(0.01f, 30.0f)]
     public float speed;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 
     public Text winLoseText;
     public Text remainingLivesText;
+    public Text coinCounterText;
 
     public int powerUpTime;
     public GameObject mainCamera;
@@ -39,6 +41,10 @@ public class PlayerController : MonoBehaviour {
     private float jumpHeightIfChanged;
     private float frictionIfChanged;
 
+    private int livesLeft;
+    private int maxCoins = 75;
+    private int coinCounter = 0;
+
     private Vector3 defaultPosition;
 
     private bool canJump = true;
@@ -55,6 +61,10 @@ public class PlayerController : MonoBehaviour {
         jumpHeightIfChanged = jumpHeight;
         frictionIfChanged = friction;
         remainingLivesText.text = "Leben: " + lives.ToString();
+
+        livesLeft = lives;
+
+        coinCounterText.text = coinCounter.ToString() + " von " + maxCoins.ToString();
     }
     void FixedUpdate()
     {
@@ -70,13 +80,13 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        if(Input.GetKey("r"))
+        if (Input.GetKey("r"))
         {
             instantDeath();
         }
 
         if (Input.GetKey("t"))
-        { 
+        {
             //TODO: Gravitation drehen implementieren
             //gravitation
             //rb.velocity.y += gravity * Time.deltaTime;
@@ -84,7 +94,9 @@ public class PlayerController : MonoBehaviour {
             Physics.gravity = gravityDirection;
             gravityChanged = true;
             //mainCamera.transform.RotateAround(transform.position, new Vector3(0, 0, 1), 90);
-        }else{
+        }
+        else
+        {
             gravityDirection = new Vector3(0f, -9.81f, 0f);
             Physics.gravity = gravityDirection;
             gravityChanged = false;
@@ -96,7 +108,7 @@ public class PlayerController : MonoBehaviour {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        if(canJump)
+        if (canJump)
         {
             rb.angularDrag = friction;
         }
@@ -116,10 +128,10 @@ public class PlayerController : MonoBehaviour {
     {
         if (canJump)
 
-        if (Input.GetButton("Jump") && canJump)
-        {
-            jump();
-        }
+            if (Input.GetButton("Jump") && canJump)
+            {
+                jump();
+            }
     }
 
     void OnCollisionEnter(Collision other)
@@ -128,10 +140,10 @@ public class PlayerController : MonoBehaviour {
         MusicSource.clip = bounceSound;
         MusicSource.volume = volumeSpeedScale * speed;
         MusicSource.Play();
-            if (Input.GetButton("Jump"))
-                jump();
-            else
-                canJump = true;
+        if (Input.GetButton("Jump"))
+            jump();
+        else
+            canJump = true;
     }
 
     void OnCollisionExit(Collision other)
@@ -160,7 +172,7 @@ public class PlayerController : MonoBehaviour {
         MusicSource.volume = 0.8f;
         MusicSource.Play();
         Vector3 jumpDirection = -Vector3.Normalize(gravityDirection);
-        Vector3 movement = jumpDirection*jumpHeight;
+        Vector3 movement = jumpDirection * jumpHeight;
         rb.AddForce(movement);
     }
 
@@ -178,12 +190,13 @@ public class PlayerController : MonoBehaviour {
      **/
     private void respawn()
     {
-        if (lives > 0)
+        if (livesLeft > 0)
         {
             respawner.GetComponent<RespawnController>().StartCoroutine(RespawnCoroutine(gameObject, defaultPosition, respawnTimer));
-            lives--;
+            livesLeft--;
             updateLivesText();
-        }else if (lives == 0)
+        }
+        else if (livesLeft == 0)
         {
             lose();
         }
@@ -196,7 +209,7 @@ public class PlayerController : MonoBehaviour {
     /**
      * makes the player "gameObject" respawn respawn at location "respawnPosition" within "respawnTimer" seconds
      **/
-    private IEnumerator RespawnCoroutine(GameObject gameObject,Vector3 respawnPosition, int respawnTimer)
+    private IEnumerator RespawnCoroutine(GameObject gameObject, Vector3 respawnPosition, int respawnTimer)
     {
         yield return new WaitForSeconds(respawnTimer);
         gameObject.SetActive(true);
@@ -206,19 +219,41 @@ public class PlayerController : MonoBehaviour {
 
     public void updateLivesText()
     {
-        remainingLivesText.text = "Leben: " + lives.ToString();
-        if (lives == 0)
+        remainingLivesText.text = "Leben: " + livesLeft.ToString();
+        if (livesLeft == 0)
             remainingLivesText.color = Color.red;
     }
 
     private void win()
     {
-        winLoseText.text = "Juhu! Sie haben gewonnen.";
+        if (lives < 0)
+            winLoseText.text = "Juhu! Du hast " + maxCoins.ToString() + " Münzen eingesammelt und somit gesiegt.";
+        else
+            winLoseText.text = "Juhu! Du hast " + maxCoins.ToString() + " Münzen eingesammelt und somit mit " + livesLeft.ToString() + " von " + lives.ToString() + " Leben gesiegt.";
     }
 
     private void lose()
     {
         winLoseText.color = Color.red;
-        winLoseText.text = "Sie haben leider verloren.";
+        winLoseText.text = "Du hast leider alle deine " + lives.ToString() + " Leben aufgebraucht und somit verloren.";
+    }
+
+    public void setMaxCoins(int i)
+    {
+        maxCoins = i;
+    }
+
+    public void incrementLivesLeft()
+    {
+        livesLeft++;
+        updateLivesText();
+    }
+
+    public void incrementCoinCounter()
+    {
+        coinCounter++;
+        coinCounterText.text = coinCounter.ToString() + " von " + maxCoins.ToString();
+        if (coinCounter >= maxCoins)
+            win();
     }
 }
