@@ -5,7 +5,7 @@ using UnityEngine;
 public class VolumeAdjust : MonoBehaviour {
 
     AudioSource source;
-    ChangeVolume audio = new ChangeVolume();
+    ChangeVolume audio;
 	// Use this for initialization
 	void Start () {
         source = audio.volumeAudio;

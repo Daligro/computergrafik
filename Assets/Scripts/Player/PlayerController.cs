@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private float frictionIfChanged;
 
     private int livesLeft;
-    private int maxCoins = 75;
+    private int maxCoins;
     private int coinCounter = 0;
 
     private Vector3 defaultPosition;
@@ -64,8 +64,9 @@ public class PlayerController : MonoBehaviour
 
         livesLeft = lives;
 
-        coinCounterText.text = coinCounter.ToString() + " of " + maxCoins.ToString();
+        coinCounterText.text = coinCounter.ToString() + " out of " + maxCoins.ToString();
     }
+
     void FixedUpdate()
     {
         //wenn das material der Kugel verändert wurde:
