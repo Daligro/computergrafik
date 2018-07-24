@@ -60,11 +60,11 @@ public class PlayerController : MonoBehaviour
         speedIfChanged = speed;
         jumpHeightIfChanged = jumpHeight;
         frictionIfChanged = friction;
-        remainingLivesText.text = "Leben: " + lives.ToString();
+        remainingLivesText.text = "Lifes: " + lives.ToString();
 
         livesLeft = lives;
 
-        coinCounterText.text = coinCounter.ToString() + " von " + maxCoins.ToString();
+        coinCounterText.text = coinCounter.ToString() + " of " + maxCoins.ToString();
     }
     void FixedUpdate()
     {
@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
             instantDeath();
         }
 
-        if (Input.GetKey("t"))
+        /*if (Input.GetKey("t"))
         {
             //TODO: Gravitation drehen implementieren
             //gravitation
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
             gravityDirection = new Vector3(0f, -9.81f, 0f);
             Physics.gravity = gravityDirection;
             gravityChanged = false;
-        }
+        }*/
 
         Vector3 fromCameraToMe = transform.position - mainCamera.transform.position;
         fromCameraToMe.y = 0;
@@ -219,7 +219,7 @@ public class PlayerController : MonoBehaviour
 
     public void updateLivesText()
     {
-        remainingLivesText.text = "Leben: " + livesLeft.ToString();
+        remainingLivesText.text = "Lifes: " + livesLeft.ToString();
         if (livesLeft == 0)
             remainingLivesText.color = Color.red;
     }
@@ -227,15 +227,15 @@ public class PlayerController : MonoBehaviour
     private void win()
     {
         if (lives < 0)
-            winLoseText.text = "Juhu! Du hast " + maxCoins.ToString() + " Münzen eingesammelt und somit gesiegt.";
+            winLoseText.text = "Congratulations, you won! You have collected " + maxCoins.ToString() + " coins.";
         else
-            winLoseText.text = "Juhu! Du hast " + maxCoins.ToString() + " Münzen eingesammelt und somit mit " + livesLeft.ToString() + " von " + lives.ToString() + " Leben gesiegt.";
+            winLoseText.text = "Congratulations, you won! You have collected " + maxCoins.ToString() + " coins and have " + livesLeft.ToString() + " out of " + lives.ToString() + " lifes left.";
     }
 
     private void lose()
     {
         winLoseText.color = Color.red;
-        winLoseText.text = "Du hast leider alle deine " + lives.ToString() + " Leben aufgebraucht und somit verloren.";
+        winLoseText.text = "You have lost all of your " + lives.ToString() + " lifes. Try again!";
     }
 
     public void setMaxCoins(int i)
@@ -252,7 +252,7 @@ public class PlayerController : MonoBehaviour
     public void incrementCoinCounter()
     {
         coinCounter++;
-        coinCounterText.text = coinCounter.ToString() + " von " + maxCoins.ToString();
+        coinCounterText.text = coinCounter.ToString() + " out of " + maxCoins.ToString();
         if (coinCounter >= maxCoins)
             win();
     }

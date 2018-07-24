@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Enemies
+  - Audio
   layers:
   - Default
   - TransparentFX
