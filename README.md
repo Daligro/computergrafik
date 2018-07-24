@@ -8,9 +8,11 @@ Steuerung:
   S - Ball rollt rückwärts
   D - Ball rollt nach rechts
   
+  Leertaste - Springen
+  
   R - Respawn
   
-  Leertaste - Springen
+  Escape - Pause
   
 Ziel:
   Es müssen alle Münzen gesammelt werden, diese sind über die ganze Map verteilt. 
