@@ -39,9 +39,9 @@ public class PickupCollider : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        System.Random rnd = new System.Random();
-        if (respawned)
+        if (respawned && other.tag=="Player")
         {
+            System.Random rnd = new System.Random();
             switch (rnd.Next(0,4)) {
                 case 0: powerUpactivateSpeedball(other); break;
 
@@ -84,16 +84,21 @@ public class PickupCollider : MonoBehaviour {
 
     private void powerUpactivateExtraLive(Collider other)
     {
-        if (other.GetComponent<PlayerController>().lives < 0)
+        if (other.GetComponent<PlayerController>().lives >= 0)
+        {
+            MusicSource.clip = pickupSound;
+            MusicSource.Play();
+            box.SetActive(false);
+            respawned = false;
+            other.GetComponent<PlayerController>().incrementLivesLeft();
+            other.GetComponent<PlayerController>().updateLivesText();
+            powerUpText.text = "1-UP";
+            StartCoroutine(hidePowerUpText());
+        }
+        else
+        {
             OnTriggerEnter(other);
-        MusicSource.clip = pickupSound;
-        MusicSource.Play();
-        box.SetActive(false);
-        respawned = false;
-        other.GetComponent<PlayerController>().lives++;
-        other.GetComponent<PlayerController>().updateLivesText();
-        powerUpText.text = "1-UP";
-        StartCoroutine(hidePowerUpText());
+        }
     }
 
     private void powerUpDisableEnemies(Collider other)

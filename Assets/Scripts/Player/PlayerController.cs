@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public Text coinCounterText;
 
     public int powerUpTime;
+    public GameObject timer;
     public GameObject mainCamera;
     public GameObject respawner;
     public AudioClip jumpSound;
@@ -60,7 +61,8 @@ public class PlayerController : MonoBehaviour
         speedIfChanged = speed;
         jumpHeightIfChanged = jumpHeight;
         frictionIfChanged = friction;
-        remainingLivesText.text = "Lifes: " + lives.ToString();
+        if(lives>0)
+            remainingLivesText.text = "Lifes: " + lives.ToString();
 
         livesLeft = lives;
 
@@ -227,16 +229,22 @@ public class PlayerController : MonoBehaviour
 
     private void win()
     {
+        int seconds = timer.GetComponent<Timer>().getCurrentSeconds();
+        int minutes = timer.GetComponent<Timer>().getCurrentMinutes();
+        timer.SetActive(false);
         if (lives < 0)
-            winLoseText.text = "Congratulations, you won! You have collected " + maxCoins.ToString() + " coins.";
+            winLoseText.text = "Congratulations, you won! You have collected " + maxCoins.ToString() + " coins in "+minutes.ToString()+" and "+seconds.ToString()+".";
         else
-            winLoseText.text = "Congratulations, you won! You have collected " + maxCoins.ToString() + " coins and have " + livesLeft.ToString() + " out of " + lives.ToString() + " lifes left.";
+            winLoseText.text = "Congratulations, you won! You have collected " + maxCoins.ToString() + " coins in "+minutes.ToString()+" minutes and "+seconds.ToString()+" seconds with " + livesLeft.ToString() + " out of " + lives.ToString() + " lifes left.";
     }
 
     private void lose()
     {
+        int seconds = timer.GetComponent<Timer>().getCurrentSeconds();
+        int minutes = timer.GetComponent<Timer>().getCurrentMinutes();
+        timer.SetActive(false);
         winLoseText.color = Color.red;
-        winLoseText.text = "You have lost all of your " + lives.ToString() + " lifes. Try again!";
+        winLoseText.text = "You have lost all of your " + lives.ToString() + " lifes within "+minutes.ToString()+" minutes and "+seconds.ToString()+" seconds. Try again!";
     }
 
     public void setMaxCoins(int i)
