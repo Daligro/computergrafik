@@ -11,10 +11,7 @@ public class CoinController : MonoBehaviour
     void Start()
     {
         int maxCoins = 0;
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            maxCoins += transform.GetChild(i).childCount;
-        }
+        maxCoins += transform.childCount;
         player.GetComponent<PlayerController>().setMaxCoins(maxCoins);
     }
 
