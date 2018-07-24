@@ -16,8 +16,7 @@ Mobile Low Poly Battle Arena / Tower Defense Forest Pack  - https://assetstore.u
 ProBuilder - https://assetstore.unity.com/packages/tools/modeling/probuilder-111418
 Skybox Series Free - https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
 Standard Assets  - https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351
-TextMesh Pro - https://assetstore.unity.com/packages/essentials/beta-projects/textmesh-pro-84126
 Water Effect Fits For Lowpoly Style - https://assetstore.unity.com/packages/vfx/shaders/water-effect-fits-for-lowpoly-style-87810
 
-MenÃ¼-Hintergrund:
+Menü-Hintergrund:
 https://wallpapershome.com/download-wallpapers/android/polygon-4k-5k-wallpaper-landscape-nature-low-poly-238.html

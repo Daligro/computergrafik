@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour {
             currentSeconds = 0;
             currentMinutes++;
         }
-        if (currentSeconds < 10)
+        if (currentSeconds < 9)
         {
             timeText.text = currentMinutes.ToString() + ":0" + (++currentSeconds).ToString();
 

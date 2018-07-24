@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class VolumeAdjust : MonoBehaviour {
 
-    AudioSource source;
-    ChangeVolume audio;
-	// Use this for initialization
-	void Start () {
-        source = audio.volumeAudio;
-        source.volume = audio.volumeAudio.volume;
+    void FixedUpdate()
+    {
+        gameObject.GetComponent<AudioSource>().volume = ChangeVolume.volume;
     }
 }
