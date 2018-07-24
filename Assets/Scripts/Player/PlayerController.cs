@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
             instantDeath();
         }
 
-        /*if (Input.GetKey("t"))
+        if (Input.GetKey("t"))
         {
             //TODO: Gravitation drehen implementieren
             //gravitation
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
             gravityDirection = new Vector3(0f, -9.81f, 0f);
             Physics.gravity = gravityDirection;
             gravityChanged = false;
-        }*/
+        }
 
         Vector3 fromCameraToMe = transform.position - mainCamera.transform.position;
         fromCameraToMe.y = 0;
