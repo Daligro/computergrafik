@@ -1,0 +1,22 @@
+Benutzte Assets:
+
+8-bit 8 Pack Music Loops - https://assetstore.unity.com/packages/audio/music/electronic/8-bit-8-pack-music-loops-60232
+ANIMALS Pack lowPoly - https://assetstore.unity.com/packages/3d/characters/animals/animals-pack-lowpoly-67734
+Coins Sfx - https://assetstore.unity.com/packages/audio/sound-fx/coins-sfx-39052
+FBX Exporter - https://assetstore.unity.com/packages/essentials/fbx-exporter-101408
+FREE Skybox - Cubemap Extended - https://assetstore.unity.com/packages/vfx/shaders/free-skybox-cubemap-extended-107400
+Low Poly Game Kit - https://assetstore.unity.com/packages/templates/packs/low-poly-game-kit-110455
+Low Poly Nature Assets Sample - https://assetstore.unity.com/packages/3d/environments/low-poly-nature-assets-sample-67201
+Low Poly Shaders - https://assetstore.unity.com/packages/vfx/shaders/low-poly-shaders-85262
+Low Poly Survival Essentials - https://assetstore.unity.com/packages/3d/props/tools/low-poly-survival-essentials-109444
+Low Poly: Free Pack - https://assetstore.unity.com/packages/3d/environments/low-poly-free-pack-58821
+Low Poly's Pack vol. 2 - https://assetstore.unity.com/packages/3d/environments/low-poly-s-pack-vol-2-46375
+LowPoly Vegetation Season Pack Lite - https://assetstore.unity.com/packages/3d/vegetation/lowpoly-vegetation-season-pack-lite-96083
+Mobile Low Poly Battle Arena / Tower Defense Forest Pack  - https://assetstore.unity.com/packages/3d/environments/mobile-low-poly-battle-arena-tower-defense-forest-pack-100080
+ProBuilder - https://assetstore.unity.com/packages/tools/modeling/probuilder-111418
+Skybox Series Free - https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
+Standard Assets  - https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351
+Water Effect Fits For Lowpoly Style - https://assetstore.unity.com/packages/vfx/shaders/water-effect-fits-for-lowpoly-style-87810
+
+Menü-Hintergrund:
+https://wallpapershome.com/download-wallpapers/android/polygon-4k-5k-wallpaper-landscape-nature-low-poly-238.html
