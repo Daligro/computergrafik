@@ -25,8 +25,8 @@ Ziel:
   ein PowerUp, welches dem Spieler ein Leben hinzufügt,
   und ein PowerUp, das die Gegner für eine gewissene Zeit deaktiviert.
   
-  Ab Spielbeginn wird ein Timer gestartet. Sind alle Münzen eingesammelt ist das Spiel beendet
-  und der Timer wird gestoppt.
 
-Damit das Projekt Fehlerfrei läuft muss man den Ordner:
-	C:\Users\username\AppData\Local\Unity\cache\packages\packages.unity.com\
+  Ab Spielbeginn wird ein Timer gestartet. 
+  Mit Escape gelangt man in ein Pausenmenü, wo man entscheiden kann, ob man das Spiel 
+  fortsetzen, neustarten oder beenden möchte. Während man sich im Menu befindet ist der Timer gestoppt.
+
