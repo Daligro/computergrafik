@@ -88,22 +88,10 @@ public class PlayerController : MonoBehaviour
             instantDeath();
         }
 
-        if (Input.GetKey("t"))
-        {
-            //TODO: Gravitation drehen implementieren
-            //gravitation
-            //rb.velocity.y += gravity * Time.deltaTime;
-            gravityDirection = new Vector3(9.81f, 0f, 0f);
-            Physics.gravity = gravityDirection;
-            gravityChanged = true;
-            //mainCamera.transform.RotateAround(transform.position, new Vector3(0, 0, 1), 90);
-        }
-        else
-        {
-            gravityDirection = new Vector3(0f, -9.81f, 0f);
-            Physics.gravity = gravityDirection;
-            gravityChanged = false;
-        }
+
+        gravityDirection = new Vector3(0f, -9.81f, 0f);
+        Physics.gravity = gravityDirection;
+        gravityChanged = false;
 
         Vector3 fromCameraToMe = transform.position - mainCamera.transform.position;
         fromCameraToMe.y = 0;

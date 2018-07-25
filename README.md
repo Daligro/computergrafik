@@ -1,4 +1,4 @@
-# computergrafik
+﻿# computergrafik
 
 Sodaball
 
@@ -27,3 +27,6 @@ Ziel:
   
   Ab Spielbeginn wird ein Timer gestartet. Sind alle Münzen eingesammelt ist das Spiel beendet
   und der Timer wird gestoppt.
+
+Damit das Projekt Fehlerfrei läuft muss man den Ordner:
+	C:\Users\username\AppData\Local\Unity\cache\packages\packages.unity.com\
